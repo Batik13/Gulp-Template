@@ -1,0 +1,402 @@
+@import "../libs/bourbon/core/bourbon"
+@import "fonts"
+@import "libs"
+@import "_mixins/custom"
+@import "_mixins/background-linear-gradient"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	text-transform: none
+	font-family: $default-font
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	text-transform: none
+	font-family: $default-font
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	text-transform: none
+	font-family: $default-font
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	text-transform: none
+	font-family: $default-font
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px 
+	+position (relative, null null null null)
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	min-height: 700px
+
+ul
+	list-style-type: none
+	margin-bottom: 0
+	padding-left: 0
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: red
+	color: #fff
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
+a
+	transition: none !important
+	text-decoration: none !important
+	&:hover
+		transition: none !important
+		color: $red
+
+.no-gut
+	padding: 0
+
+
+/* about */
+.about
+	background: #505050
+	height: 900px
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	padding: 60px
+.header
+	display: flex
+	position: fixed
+	top: 60px
+	left: 60px
+	z-index: 10
+.logo
+	+h2 ($black, $white)
+	margin-left: 5px
+	text-decoration: none
+	letter-spacing: 7px	
+	&:hover
+		color: $link-color
+.hamburger
+	width: 91px
+	height: 80px
+	display: flex
+	align-items: center
+	justify-content: center	
+	background: $black
+.hamburger-inner
+	+custom-hamburger ()
+	height: 3px
+	&:after
+		+custom-hamburger ()
+		height: 3px
+	&:before
+		+custom-hamburger ()
+		height: 3px
+.hamburger:hover
+	opacity: 1
+.losung
+	max-width: 850px
+.losung__title
+.h2
+	+h2 ($white, $black)
+	letter-spacing: 5px
+.losung__text
+	margin-top: 15px
+	& p
+		color: $gray
+		font-size: 22px
+#menu
+	position: fixed
+	top: 0
+	right: auto
+.mm-wrapper_blocking
+	overflow: unset
+
+
+/* information */
+.information
+	padding-top: 135px
+	padding-bottom: 135px
+	padding-left: 10px
+.fact
+	width: 75%
+	margin: auto
+.border-gray
+	background: url('../img/border-gray.png') 0 100% repeat-x;
+.fact__top
+	padding-bottom: 5px
+	margin-bottom: 15px
+.big-text
+	font-family: $weight-font
+	color: $red
+	font-size: 90px
+	line-height: 90px
+
+
+/* offer */
+.offer
+	background: url('../img/offer-bg.jpg') 50% 0 no-repeat
+	padding-bottom: 161px
+	background-size: cover
+.offer-block
+	padding-left: 150px
+	padding-top: 125px
+.offer__title
+	+h2($black, $white)
+	margin-bottom: 60px
+.offer-list
+	padding-left: 0
+	margin-bottom: 90px
+.offer-list__item
+	font-size: 22px
+	margin-bottom: 42px
+	position: relative
+	padding-left: 60px
+	i
+		position: absolute
+		top: -3px
+		left: 0px
+		font-style: normal
+		display: inline-block
+		font-size: 18px
+		font-family: $weight-font
+		width: 40px
+		height: 40px
+		border: 3px solid #D9D9D9
+		border-radius: 50%
+		text-align: center
+		line-height: 37px
+.offer-links
+	padding-left: 0
+.offer-links__item
+	margin-bottom: 23px
+	a
+.link
+	font-size: 18px
+	font-family: $weight-font
+	text-transform: uppercase
+	color: $link-color
+
+
+/* conditions */
+.conditions
+	background: $black
+.conditions__title
+	margin-top: 100px
+.information_style-black
+	padding-top: 240px
+	padding-bottom: 100px
+	padding-left: 0
+.color-white
+	color: $white
+.border-white
+	background: url('../img/border-white.png') 0 100% repeat-x;
+.display-flex
+	display: flex
+
+
+/* feedback */
+.feedback-block
+	padding-top: 100px
+	margin-bottom: 125px
+.feedback__title	
+	+h2($black, $white)
+.w-feedback
+	position: relative
+	max-width: 1200px
+	width: 100%
+	margin: auto
+	background: url('../img/fedback-bg.jpg') 0 0;
+	margin-top: 55px
+	padding: 0 10px
+	&:after
+		content: ''
+		position: absolute
+		top: 4px
+		left: 4px
+		right: 5px
+		bottom: 5px
+		background: $white
+.feedback
+	position: relative
+	z-index: 3
+	padding-top: 60px
+	padding-bottom: 40px
+.w-form-element
+.input
+	width: 100%
+	max-width: 420px
+	height: 74px
+	margin-bottom: 30px
+	text-transform: uppercase
+	font-family: $weight-font	
+	outline: 0
+	border: 0
+	border-bottom: 3px solid #ccc
+	transition: all .3s	
+	&:focus
+		border-bottom: 3px solid $black
+		transition: all .3s
+.textarea
+	width: 100%
+	height: 74px
+	margin-bottom: 30px
+	line-height: 71px
+	width: 100%
+	text-transform: uppercase
+	font-family: $weight-font	
+	outline: 0
+	border: 0
+	border-bottom: 3px solid #ccc
+	transition: all .3s
+	overflow-y: hidden
+	&:focus
+		border-bottom: 3px solid $black
+		transition: all .3s
+.capcha
+.submit
+	width: 100%
+	max-width: 360px
+	height: 74px
+	border: 2px solid $link-color
+	background: $white
+	color: $link-color
+	text-transform: uppercase
+	font-family: $weight-font	
+	line-height: 71px
+	display: block
+	cursor: pointer
+	transition: all .3s
+	&:hover
+		border: 2px solid $red
+		color: $red
+		transition: all .3s
+.w-form-element_submit
+	margin-top: 30px
+.confirm-data
+	width: 100%
+	margin-top: 30px
+	color: #9B9C9C
+	max-width: 360px
+
+
+/* footer */
+#my-footer
+	background: $black
+.footer
+	width: 100%
+	max-width: 1200px
+	margin: auto
+.f-line
+	display: flex
+	justify-content: center
+	align-items: center
+	border-top: 3px solid #222222
+	&:first-child
+		border: none
+.f-line1
+	min-height: 90px
+.f-line2
+	min-height: 90px
+.f-line3
+	min-height: 120px
+.f-line4
+	min-height: 90px
+.cont
+	display: flex
+	margin: 0
+.cont__item
+	margin: 0 60px
+	& i
+		color: #535353
+		margin-right: 10px
+		font-size: 22px
+		position: relative
+		top: 2px
+	& a
+		color: #878787
+		font-size: 18px
+		&:hover
+			color: $white	
+.w-footer-menu
+	width: 100%
+.footer-menu
+	max-width: 820px
+	display: flex
+	justify-content: space-around
+	align-items: center
+	margin: 0 auto
+.footer-menu__item
+	& a
+		color: $white
+		font-size: 18px
+		&:hover
+			color: $link-color
+.social
+	display: flex
+	justify-content: center
+	align-items: center	
+.social__item
+	line-height: 0
+	width: 190px
+	height: 78px
+	display: flex
+	justify-content: center
+	align-items: center
+	border-left: 3px solid #222222
+	&:first-child
+		border: none
+	& a
+		font-size: 33px
+		color: $white
+		&:hover
+			color: $link-color
+		& i
+.conf
+	color: #4D4D4D
+	font-size: 18px
+	&:hover
+		color: $white
+.mm-navbar__title
+	color: $red !important
+.mm-menu a:hover
+	color: $link-color
+
+
+
+@import "media"

@@ -1,0 +1,380 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	
+	/* about */
+	.about
+		height: 700px
+		padding: 30px
+	.header
+		top: 30px
+		left: 30px
+	.logo
+		font-size: 32px
+		padding: 0 19px
+		height: 65px
+		line-height: 70px
+	.hamburger
+		width: 89px
+		height: 65px
+	.h2
+		font-size: 32px
+		padding: 0 17px
+		height: 65px
+		line-height: 70px
+		letter-spacing: 4px
+	.losung__text
+		& p
+			font-size: 20px
+			line-height: 33px
+
+
+	/* information */
+	.information
+		padding-top: 75px
+		padding-bottom: 80px
+	.fact
+		width: 80%		
+	.big-text
+		font-size: 65px
+		line-height: 65px
+	.fact__top
+		margin-bottom: 10px
+
+
+	/* offer */
+	.offer
+		background: url('../img/offer-bg-md.jpg') 50% 0 no-repeat
+		padding-bottom: 60px
+	.offer-block
+		padding-left: 40px
+		padding-top: 60px
+	.offer__title
+		margin-bottom: 40px
+	.offer-list
+		margin-bottom: 60px
+		max-width: 670px		
+	.offer-list__item
+		font-size: 20px
+		margin-bottom: 24px
+		padding-left: 53px
+		i
+			top: -2px
+			font-size: 16px
+			width: 36px
+			height: 36px
+			line-height: 33px
+	.offer-links
+		padding-left: 0
+	.offer-links__item
+		list-style-type: none
+		margin-bottom: 15px
+		a
+	.link
+		font-size: 16px
+
+
+	/* conditions */
+	.conditions__title
+		margin-top: 60px
+	.information_style-black
+		padding-top: 170px
+		padding-bottom: 40px
+
+
+	/* feedback */
+	.feedback
+		padding-bottom: 30px
+	.feedback-block
+		padding: 0 10px
+		padding-top: 60px
+	.input
+		max-width: 360px
+		margin-bottom: 25px
+	.submit
+		width: 300px
+		height: 60px
+		line-height: 62px
+	.confirm-data
+		max-width: 300px
+		line-height: 22px
+	.w-form-element_submit
+		margin-top: 25px
+
+
+	/* footer */
+	.f-line1
+		min-height: 70px
+	.f-line2
+		min-height: 70px
+	.f-line3
+		min-height: 100px
+	.f-line4
+		min-height: 70px
+	.cont__item
+		margin: 0 60px
+		& i
+			margin-right: 10px
+			font-size: 22px
+		& a
+			font-size: 16px
+	.footer-menu__item
+		margin: 0 40px
+		& a
+			font-size: 16px
+	.social__item
+		line-height: 0
+		width: 150px
+		height: 60px
+		& a
+			font-size: 33px
+	.conf
+		font-size: 16px
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/* about */
+	.about
+		padding: 0
+		height: auto
+	.about-bg-mobile
+	  position: relative
+  	padding-top: 50%
+	.simple-bg
+	  position: absolute
+	  top: 0
+	  left: 0
+	  width: 100%
+	  height: 100%
+	.header
+		top: 0
+		left: 0
+		width: 100%
+		background: $black		
+	.logo
+		margin-left: 0px
+		font-size: 16px
+		padding: 0 10px
+		height: 45px
+		line-height: 50px
+	.hamburger
+		height: 45px
+		width: 60px
+	.hamburger-inner
+		width: 30px
+		height: 2px
+		&:after
+			width: 30px
+			height: 2px
+		&:before
+			width: 30px
+			height: 2px
+	.h2
+		padding: 13px 13px 7px 13px
+		letter-spacing: 4px
+		display: inline-block
+		height: auto
+		font-size: 25px
+		line-height: 35px
+		text-align: left
+	.losung
+		padding-top: 70px
+		padding-left: 10px
+		padding-right: 10px
+		+linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0, 0) 0, rgba(0,0,0,0.33) 11%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%)
+	.losung__text
+		p
+			font-size: 18px
+			line-height: 30px
+
+
+	/* information */
+	.information
+		padding-bottom: 0px
+		padding-top: 0px
+	.fact
+		max-width: 150px
+		margin-top: 30px
+		margin-left: 0
+	.fact__top
+	.big-text
+		font-size: 50px
+		line-height: 50px
+	.fact__bottom
+		line-height: 20px
+	.information
+		padding-bottom: 30px
+
+
+	/* offer */
+	.offer
+		min-height: auto
+		background: url('../img/offer-bg-md.jpg') 50% 0 repeat-y
+		padding-bottom: 20px
+	.offer-block
+		padding-left: 10px
+		padding-right: 10px
+		padding-top: 30px
+	.offer__title
+		margin-bottom: 40px
+	.offer-list
+		margin-bottom: 30px
+	.offer-list__item
+		font-size: 18px
+		margin-bottom: 20px
+		padding-left: 40px
+		i
+			top: -2px
+			font-size: 16px
+			width: 32px
+			height: 32px
+			line-height: 29px
+	.offer-links
+		padding-left: 0
+	.offer-links__item
+		list-style-type: none
+		margin-bottom: 15px
+		a
+	.link
+		font-size: 16px
+
+
+	/* conditions */
+	.conditions
+		padding-left: 10px
+		padding-right: 10px
+		padding-bottom: 20px
+	.conditions__title
+		margin-top: 28px
+	.fact_style-black
+		max-width: 100%
+		width: 100%
+
+
+	/* feedback */	
+	.w-feedback
+		background: none
+	.input
+		max-width: 100%
+		height: 42px
+		margin-bottom: 18px
+	.textarea
+		height: 42px
+		margin-bottom: 18px
+		line-height: 33px
+	.capcha
+		margin-top: 10px
+	.confirm-data
+		margin-top: 20px
+	.feedback
+		padding-top: 0px
+		padding-bottom: 10px
+	.feedback-block
+		padding-top: 30px
+		margin-bottom: 10px
+	.w-feedback
+		margin-top: 15px
+
+
+	/* footer */
+	.footer
+		padding-left: 10px
+		padding-right: 10px
+		padding-top: 20px
+		padding-bottom: 30px
+	.f-line
+		justify-content: start
+	.f-line1
+		min-height: auto
+		padding-bottom: 10px
+	.f-line2
+		min-height: auto
+		padding-top: 20px
+		padding-bottom: 20px
+	.f-line3
+		min-height: auto
+		padding-top: 3px
+		padding-bottom: 3px
+	.f-line4
+		min-height: auto
+		padding-top: 20px
+	.cont
+		flex-direction: column
+	.cont__item
+		margin: 0
+		margin-bottom: 5px
+		& i
+			margin-right: 7px
+			font-size: 18px
+		& a
+			font-size: 16px
+	.footer-menu
+		display: block
+	.footer-menu__item
+		margin: 0
+		width: 48%
+		display: inline-block
+		padding: 3px 0
+		& a
+			font-size: 16px
+	.social
+		width: 100%
+		justify-content: space-around
+	.social__item
+		line-height: 0
+		width: auto
+		height: 60px
+		border: none
+		& a
+			font-size: 24px
+	.conf
+		font-size: 16px
+	.mm-navbar__title
+		text-align: left
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 576px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 576px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
